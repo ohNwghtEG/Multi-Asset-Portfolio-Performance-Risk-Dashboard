@@ -8,4 +8,10 @@ The dashboard is built entirely in Python using institutional-grade analytical m
 
 # Core Quantitative Concepts
 
-Log vs. simple returns · annualization conventions · Sharpe / Sortino / Calmar ratios · maximum drawdown · historical VaR & CVaR · correlation vs. covariance · rolling-window statistics
+Log vs. simple returns 
+Annualization conventions 
+Sharpe / Sortino / Calmar ratios 
+Maximum drawdown 
+Historical VaR & CVaR 
+Correlation vs. covariance 
+Rolling-window statistics
