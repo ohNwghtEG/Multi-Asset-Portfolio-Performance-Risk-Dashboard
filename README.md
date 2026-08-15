@@ -8,8 +8,8 @@ The dashboard is built entirely in Python using institutional-grade analytical m
 
 # Core Quantitative Concepts
 
-Log vs. simple returns 
-Annualization conventions 
+- Log vs. simple returns 
+-Annualization conventions 
 Sharpe / Sortino / Calmar ratios 
 Maximum drawdown 
 Historical VaR & CVaR 
