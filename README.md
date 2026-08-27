@@ -48,49 +48,49 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 
 ## Core quantitative concepts (EXPANDED)
 
-1. Returns
+1. **Returns**
 
 - Log returns (ln(P_t / P_t-1)) — used for statistical work because they're time-additive and closer to normally distributed.
 
 - Simple returns (P_t/P_t-1 - 1) — used for compounding/cumulative growth, since they reflect actual dollar growth correctly.
 
-2. Risk-free rate
+2. **Risk-free rate**
 
 - The 3-month T-Bill yield, used as the "do-nothing" baseline. Any return above this is called excess return — the reward for taking on risk at all.
 
-3. Volatility (standard deviation)
+3. **Volatility (standard deviation)**
 
 - The spread of daily returns, annualized by multiplying by √252 (252 trading days/year). This is the standard proxy for "risk" in modern portfolio theory.
 
-4. Sharpe ratio
+4. **Sharpe ratio**
 
 - (mean excess return) / (total volatility) — return earned per unit of total risk taken. Higher is better; it's the most common risk-adjusted performance metric.
 
-5. Sortino ratio
+5. **Sortino ratio**
 
 - Like Sharpe, but only penalizes downside volatility (negative returns), not upside swings. Reflects the intuition that investors don't mind volatility when it's making them money.
 
-6. Drawdown & Max Drawdown
+6. **Drawdown & Max Drawdown**
 
 - How far a cumulative return curve has fallen from its highest previous peak. Max drawdown is the worst peak-to-trough loss over the whole period — a visceral "how much pain would I have felt" measure.
 
-7. Calmar ratio
+7. **Calmar ratio**
 
 - annualized return / |max drawdown| — return earned per unit of worst-case pain, rather than per unit of average volatility.
 
-8. Value at Risk (VaR) & Conditional VaR (CVaR/Expected Shortfall)
+8. **Value at Risk (VaR) & Conditional VaR (CVaR/Expected Shortfall)**
 
 - VaR (95%) is the loss threshold you'd expect to exceed only 5% of the time on a given day. CVaR is the average loss on those worst days — it answers "when it's bad, how bad?"
 
-9. Correlation matrix
+9. **Correlation matrix**
 
 - Measures how assets move together (-1 to +1). Low or negative correlations are what actually create diversification benefit — this is the mathematical core of why a mixed portfolio is less risky than any single asset.
 
-10. Rolling metrics (60-day Sharpe)
+10. **Rolling metrics (60-day Sharpe)**
 
 - Recomputing a metric over a moving window rather than the whole history, to see how risk-adjusted performance changes over time rather than as one static number.
 
-11. Regime detection (200-day moving average)
+11. **Regime detection (200-day moving average)**
 
 - A simple trend-following heuristic: price above its 200-day average = "bull," below = "bear." Common technical/quant shorthand for market regime.
 
