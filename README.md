@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ohNwghtEG/Multi-Asset-Portfolio-Performance-Risk-Dashboard/blob/main/Multi-Asset%20Portfolio%20Performance%20%26%20Risk%20Dashboard.ipynb)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-[License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)
+![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)
 This project is a Python-based portfolio analytics dashboard, built in Google Colab, that pulls live market data and computes standard institutional risk/return diagnostics for a multi-asset portfolio. It constructs a comprehensive, institutional-style performance and risk analytics dashboard for a multi-asset investment portfolio spanning US equities, investment-grade bonds, gold, Nasdaq-100 technology stocks, and Bitcoin. This dashboard covers the period from 2018 into 2024, a window that encompasses some of the most volatile and consequential market environments in modern financial history, such as the COVID-19 crash and recovery of 2020, the inflation surge and Federal Reserve tightening cycle of 2022, and the AI-driven equity bull market of 2023–2024.
 
 This project is built entirely in Python using institutional-grade analytical methods and produces six interactive visualizations alongside a full risk-adjusted performance metrics table — the same categories of output that appear in hedge fund investor tear sheets, wealth management quarterly reports, and asset manager fact sheets.
