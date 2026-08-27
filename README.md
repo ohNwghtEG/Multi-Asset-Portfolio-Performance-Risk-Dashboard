@@ -45,10 +45,11 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
   - Daily return distribution histograms
   - Bull/bear regime overlay using the 200-day moving average
   - Combined 3-panel portfolio dashboard vs. benchmark
+    
 
 ## Tech Stack
 
-- Python 3
+- Python
 - `yfinance` — market data
 - `fredapi` — risk-free rate data
 - `pandas` / `numpy` — data wrangling and statistics
@@ -65,8 +66,8 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/<ohNwghtEG>/<Multi-Asset-Portfolio-Performance-Risk-Dashboard>.git
+cd <Multi-Asset-Portfolio-Performance-Risk-Dashboard>
 pip install -r requirements.txt
 ```
 
@@ -144,7 +145,11 @@ BENCHMARK  = 'SPY'
 
 ## Disclaimer
 
-This project is for educational and informational purposes only. It does not constitute financial advice. Past performance is not indicative of future results.
+This project is for educational and informational purposes only. It does not constitute financial advice. Past performance is not indicative of future results. 
+
+## LICENSES
+
+Please check the license file for more information
 
 ## License
 
