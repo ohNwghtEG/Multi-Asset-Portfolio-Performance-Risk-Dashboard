@@ -33,9 +33,9 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 | Nasdaq 100 (Tech) | `QQQ` | 10% |
 | Bitcoin | `BTC-USD` | 10% |
 
-**Here's what it does, step by step:**
+## Here's what it does, step by step:
 
-Imagine you invested money like this: 40% in a big US stock fund, 25% in bonds, 15% in gold, 10% in tech stocks, and 10% in Bitcoin. This code answers the question: "How would that mix of investments have performed from 2018 to 2024, and how risky was it?"
+**Imagine you invested money like this: 40% in a big US stock fund, 25% in bonds, 15% in gold, 10% in tech stocks, and 10% in Bitcoin. This code answers the question: "How would that mix of investments have performed from 2018 to 2024, and how risky was it?"**
 
 - Grabs historical prices for those five investments from Yahoo Finance, going back to 2018.
 - Also grabs a "safe" interest rate (like what you'd earn on a Treasury bill) so it can judge whether the portfolio's returns were actually worth the risk taken.
