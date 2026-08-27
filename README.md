@@ -6,9 +6,9 @@
 
 This project is a Python-based portfolio analytics dashboard, built in Google Colab, that pulls live market data and computes standard institutional risk/return diagnostics for a multi-asset portfolio. It constructs a comprehensive, institutional-style performance and risk analytics dashboard for a multi-asset investment portfolio spanning US equities, investment-grade bonds, gold, Nasdaq-100 technology stocks, and Bitcoin. This dashboard covers the period from 2018 into 2024, a window that encompasses some of the most volatile and consequential market environments in modern financial history, such as the COVID-19 crash and recovery of 2020, the inflation surge and Federal Reserve tightening cycle of 2022, and the AI-driven equity bull market of 2023–2024.
 
-This project is built entirely in Python using institutional-grade analytical methods and produces six interactive visualizations alongside a full risk-adjusted performance metrics table — the same categories of output that appear in hedge fund investor tear sheets, wealth management quarterly reports, and asset manager fact sheets. It downloads historical market data for a multi-asset portfolio and generates an institutional-style risk and performance tearsheet, made up of cumulative returns, drawdowns, rolling Sharpe, correlation structure, tail risk (VaR/CVaR), and market regime detection.
+This project is built entirely in Python using institutional-grade analytical methods and produces six interactive visualizations alongside a full risk-adjusted performance metrics table — the same categories of output that appear in hedge fund investor tear sheets, wealth management quarterly reports, and asset manager fact sheets. It downloads historical market data for a multi-asset portfolio and generates an institutional-style risk and performance tear sheet, made up of cumulative returns, drawdowns, rolling Sharpe, correlation structure, tail risk (VaR/CVaR), and market regime detection.
 
-(it is recommended you open the code in colab as github is restricting the graphs from being displayed after I ran the code)
+(It is recommended you open the code in Colab, as GitHub is restricting the graphs from being displayed after I ran the code)
 # Core Quantitative Concepts
 
 - Log vs. simple returns 
@@ -39,7 +39,7 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 
 **Imagine you invested money like this: 40% in a big US stock fund, 25% in bonds, 15% in gold, 10% in tech stocks, and 10% in Bitcoin. This code answers the question: "How would that mix of investments have performed from 2018 to 2024, and how risky was it?"**
 
-- Grabs historical prices for those five investments from Yahoo Finance, going back to 2018.
+- Firstly, our code grabs the historical prices for those five investments from Yahoo Finance, going back to 2018.
 - Also grabs a "safe" interest rate (like what you'd earn on a Treasury bill) so it can judge whether the portfolio's returns were actually worth the risk taken.
 - Calculates how much $1 invested would have grown to over time for each asset and for the whole blended portfolio — this is the classic "growth chart" you see in investment brochures.
 - Tracks the worst losses — how far each investment fell from its peak at any point (a "drawdown" chart), which tells you how painful it would've been to hold through the bad times.
@@ -59,10 +59,10 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
   - Cumulative growth-of-$1 chart
   - Drawdown ("underwater") chart
   - Rolling 60-day annualized Sharpe ratio
-  - Asset correlation heatmap
-  - Daily return distribution histograms
+  - Asset correlation heatmap (diversification diagnostic)
+  - Overlaid daily return histograms with VaR context
   - Bull/bear regime overlay using the 200-day moving average
-  - Combined 3-panel portfolio dashboard vs. benchmark
+  - A combined 3-panel dashboard: portfolio vs. benchmark cumulative return, portfolio drawdown, and rolling Sharpe — essentially a tearsheet.
 
 ## Core quantitative concepts (EXPANDED)
 
