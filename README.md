@@ -33,6 +33,20 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 | Nasdaq 100 (Tech) | `QQQ` | 10% |
 | Bitcoin | `BTC-USD` | 10% |
 
+**Here's what it does, step by step:**
+
+Imagine you invested money like this: 40% in a big US stock fund, 25% in bonds, 15% in gold, 10% in tech stocks, and 10% in Bitcoin. This code answers the question: "How would that mix of investments have performed from 2018 to 2024, and how risky was it?"
+
+- Grabs historical prices for those five investments from Yahoo Finance, going back to 2018.
+- Also grabs a "safe" interest rate (like what you'd earn on a Treasury bill) so it can judge whether the portfolio's returns were actually worth the risk taken.
+- Calculates how much $1 invested would have grown to over time for each asset and for the whole blended portfolio — this is the classic "growth chart" you see in investment brochures.
+- Tracks the worst losses — how far each investment fell from its peak at any point (a "drawdown" chart), which tells you how painful it would've been to hold through the bad times.
+- Measures risk-adjusted performance — not just "did it go up," but "did it go up enough to justify how bumpy the ride was" (that's what the Sharpe/Sortino ratios do).
+- Checks how the assets move together — a heatmap showing whether, say, gold tends to zig when stocks zag (useful for understanding diversification).
+- Shows worst-case-day risk — how bad a really bad day could get, statistically.
+- Marks bull vs. bear markets for stocks using a simple 200-day trend line.
+- Finally, it stitches several of these into one summary "dashboard" comparing the whole portfolio against just holding the S&P 500 alone.
+
 ## Features
 
 - **Data pipeline** — pulls daily adjusted prices via `yfinance` and the 3-month T-Bill risk-free rate via `fredapi` (FRED series `DGS3MO`).
@@ -102,20 +116,6 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 - `pandas` / `numpy` — data wrangling and statistics
 - `plotly` — interactive charts
 - `quantstats` (optional, for extended tearsheet stats)
-  
-# Imagine you invested money like this: 40% in a big US stock fund, 25% in bonds, 15% in gold, 10% in tech stocks, and 10% in Bitcoin. This code answers the question: "How would that mix of investments have performed from 2018 to 2024, and how risky was it?"
-
-**Here's what it does, step by step:**
-
-- Grabs historical prices for those five investments from Yahoo Finance, going back to 2018.
-- Also grabs a "safe" interest rate (like what you'd earn on a Treasury bill) so it can judge whether the portfolio's returns were actually worth the risk taken.
-- Calculates how much $1 invested would have grown to over time for each asset and for the whole blended portfolio — this is the classic "growth chart" you see in investment brochures.
-- Tracks the worst losses — how far each investment fell from its peak at any point (a "drawdown" chart), which tells you how painful it would've been to hold through the bad times.
-- Measures risk-adjusted performance — not just "did it go up," but "did it go up enough to justify how bumpy the ride was" (that's what the Sharpe/Sortino ratios do).
-- Checks how the assets move together — a heatmap showing whether, say, gold tends to zig when stocks zag (useful for understanding diversification).
-- Shows worst-case-day risk — how bad a really bad day could get, statistically.
-- Marks bull vs. bear markets for stocks using a simple 200-day trend line.
-- Finally, it stitches several of these into one summary "dashboard" comparing the whole portfolio against just holding the S&P 500 alone.
 
 ## Getting Started
 
