@@ -6,6 +6,7 @@ This project constructs a comprehensive, institutional-style performance and ris
 
 The dashboard is built entirely in Python using institutional-grade analytical methods and produces six interactive visualizations alongside a full risk-adjusted performance metrics table — the same categories of output that appear in hedge fund investor tear sheets, wealth management quarterly reports, and asset manager fact sheets.
 
+(it is recommended you open the code in colab as github is restricting the graphs from being displayed after I ran the code)
 # Core Quantitative Concepts
 
 - Log vs. simple returns 
