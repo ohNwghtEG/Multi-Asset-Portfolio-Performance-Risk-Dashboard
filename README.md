@@ -19,7 +19,7 @@ This project is built entirely in Python using institutional-grade analytical me
 - Correlation vs. covariance 
 - Rolling-window statistics
 
-## Overview
+# Overview
 
 This project answers a simple question: **how would a given asset allocation have actually performed, and how risky was the ride?**
 
@@ -33,7 +33,7 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 | Nasdaq 100 (Tech) | `QQQ` | 10% |
 | Bitcoin | `BTC-USD` | 10% |
 
-## Here's what it does, step by step:
+# Here's what it does, step by step:
 
 **Imagine you invested money like this: 40% in a big US stock fund, 25% in bonds, 15% in gold, 10% in tech stocks, and 10% in Bitcoin. This code answers the question: "How would that mix of investments have performed from 2018 to 2024, and how risky was it?"**
 
@@ -47,7 +47,8 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 - Marks bull vs. bear markets for stocks using a simple 200-day trend line.
 - Finally, it stitches several of these into one summary "dashboard" comparing the whole portfolio against just holding the S&P 500 alone.
 
-## Features
+
+# Features
 
 - **Data pipeline** — pulls daily adjusted prices via `yfinance` and the 3-month T-Bill risk-free rate via `fredapi` (FRED series `DGS3MO`).
 - **Performance metrics** — annualized return, volatility, Sharpe ratio, Sortino ratio, max drawdown, Calmar ratio, 95% VaR, and 95% CVaR for every asset and the blended portfolio.
