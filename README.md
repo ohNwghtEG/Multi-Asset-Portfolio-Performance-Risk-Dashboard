@@ -194,10 +194,6 @@ BENCHMARK  = 'SPY'
 
 This project is for educational and informational purposes only. It does not constitute financial advice. Past performance is not indicative of future results. 
 
-## LICENSES
-
-Please check the license file for more information
-
 ## License
 
 This project is released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — dedicated to the public domain. You can copy, modify, and use it for any purpose, including commercially, without asking permission or providing attribution. See [LICENSE](LICENSE) for the full legal text.
