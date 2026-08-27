@@ -1,0 +1,23 @@
+**Data pipeline:**
+
+Uses yfinance to download daily adjusted closing prices (2018–2024) for five tickers: SPY (US large-cap equities), AGG (US aggregate bonds), GLD (gold), QQQ (Nasdaq 100), and BTC-USD (Bitcoin) — a fixed 40/25/15/10/10 weight allocation.
+Pulls the 3-month T-Bill yield (DGS3MO) from FRED via fredapi to use as the risk-free rate, converting it from annualized percentage to a daily decimal rate for Sharpe/Sortino calculations.
+Computes both log returns (for statistical work) and simple returns (for compounding/cumulative growth), plus a weighted portfolio return series.
+
+**Analytics engine (compute_metrics): For every asset and the blended portfolio, it calculates:**
+
+- Annualized return and volatility
+- Sharpe ratio (excess return / total volatility)
+- Sortino ratio (return / downside deviation only)
+- Maximum drawdown and Calmar ratio (return / |max drawdown|)
+- Historical VaR and CVaR/Expected Shortfall at 95% confidence
+
+**Visualizations (all via Plotly):**
+
+- Cumulative growth-of-$1 chart per asset
+- Underwater/drawdown chart
+- Rolling 60-day annualized Sharpe ratio
+- Asset correlation heatmap (diversification diagnostic)
+- Overlaid daily return histograms with VaR context
+- SPY price vs. 200-day moving average with shaded bear-market regimes
+- A combined 3-panel dashboard: portfolio vs. benchmark cumulative return, portfolio drawdown, and rolling Sharpe — essentially a tearsheet.
