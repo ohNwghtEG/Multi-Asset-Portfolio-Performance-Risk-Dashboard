@@ -35,7 +35,7 @@ It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and B
 | Bitcoin | `BTC-USD` | 10% |
 
 
-# Here's what it does, step by step:
+# What does it do?
 
 **Imagine you invested money like this: 40% in a big US stock fund, 25% in bonds, 15% in gold, 10% in tech stocks, and 10% in Bitcoin. This code answers the question: "How would that mix of investments have performed from 2018 to 2024, and how risky was it?"**
 
