@@ -22,7 +22,7 @@ This project is built entirely in Python using institutional-grade analytical me
 
 # Overview
 
-This project answers a simple question: **how would a given asset allocation have actually performed, and how risky was the ride?**
+This project answers a simple question: **How would a given asset allocation have actually performed, and how risky was the ride?**
 
 It's built around a sample 5-asset portfolio (equities, bonds, gold, tech, and Bitcoin), but the tickers and weights are fully configurable — point it at any set of Yahoo Finance tickers and it will compute the same analytics.
 
