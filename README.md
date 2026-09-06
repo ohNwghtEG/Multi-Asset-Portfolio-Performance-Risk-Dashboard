@@ -8,21 +8,21 @@ This project is a Python-based portfolio analytics dashboard, built in Google Co
 
 This project is built entirely in Python using institutional-grade analytical methods and produces six interactive visualizations alongside a full risk-adjusted performance metrics table — the same categories of output that appear in hedge fund investor tear sheets, wealth management quarterly reports, and asset manager fact sheets. It downloads historical market data for a multi-asset portfolio and generates an institutional-style risk and performance tear sheet, made up of cumulative returns, drawdowns, rolling Sharpe, correlation structure, tail risk (VaR/CVaR), and market regime detection.
 
-**CHANGES:**
+**(2026-09-05) RECENT CHANGES:**
 **Fix 1 — the returns bug (changes numbers):**
 
 - portfolio_returns now weights simple returns, not log returns. A weighted sum of log returns isn't a portfolio log return, and the old code then compounded it with (1+r).cumprod() as though it were simple — two incompatible conventions stacked.
-- compute_metrics now takes simple_returns. It was internally doing (1+r).cumprod() on log returns for the drawdown/Calmar path.
+- Compute_metrics now takes simple_returns. It was internally doing (1+r).cumprod() on log returns for the drawdown/Calmar path.
 - Added a CAGR column, because mean × 252 on a 68%-vol asset like BTC is misleading (+49.2% arithmetic vs +29.8% actual).
-- log_returns is still computed — it's genuinely the better basis for distribution work — but it's no longer compounded anywhere.
+- Log_returns is still computed — it's genuinely the better basis for distribution work — but it's no longer compounded anywhere.
 
 **Fix 2 — the helpers cell (changes nothing about your numbers):**
 
-- drawdown() replaces 3 hand-written copies; rolling_sharpe() replaces 2. I asserted both reproduce your original inline results exactly before shipping them.
-- rolling_sharpe is vectorised instead of .rolling().apply(lambda) — same output, dramatically faster.
+- Drawdown() replaces 3 hand-written copies; rolling_sharpe() replaces 2. I asserted both reproduce your original inline results exactly before shipping them.
+- Rolling_sharpe is vectorised instead of .rolling().apply(lambda) — same output, dramatically faster.
 - COLORS is now a dict keyed by ticker, defined in the helpers cell. Previously colors was a positional list created in the cumulative-returns cell and read by three later cells — so those cells died with NameError on a fresh kernel, and the colours silently misassigned if you ever reordered TICKERS.
-- styled() absorbs the layout boilerplate that was copy-pasted 6×.
-- portfolio_return() renormalises weights, so your WEIGHTS no longer has to sum to exactly 1.0 by hand.
+- Styled() absorbs the layout boilerplate that was copy-pasted 6×.
+- Portfolio_return() renormalises weights, so your WEIGHTS no longer has to sum to exactly 1.0 by hand.
 
 (It is recommended you open the code in Colab, as GitHub is restricting the graphs from being displayed after I ran the code)
 # Core Quantitative Concepts
