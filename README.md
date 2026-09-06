@@ -1,6 +1,6 @@
 # Multi-Asset-Portfolio-Performance-Risk-Dashboard
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ohNwghtEG/Multi-Asset-Portfolio-Performance-Risk-Dashboard/blob/main/Multi-Asset%20Portfolio%20Performance%20%26%20Risk%20Dashboard.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1LDCx--b-FIPlGqqmJWJ_MVSA3c0NWqVh?usp=sharing))
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)
 
