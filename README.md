@@ -230,4 +230,4 @@ This project is for educational and informational purposes only. It does not con
 
 ## License
 
-This project is released under [MIT License]((https://opensource.org/license/mit))
+This project is released under the [MIT License]([https://opensource.org/license/mit])
