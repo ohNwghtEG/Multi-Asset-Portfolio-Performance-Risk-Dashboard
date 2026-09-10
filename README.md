@@ -230,4 +230,4 @@ This project is for educational and informational purposes only. It does not con
 
 ## License
 
-This project is released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — dedicated to the public domain. You can copy, modify, and use it for any purpose, including commercially, without asking permission or providing attribution. See [LICENSE](LICENSE) for the full legal text.
+This project is released under [MIT License]((https://opensource.org/license/mit))
